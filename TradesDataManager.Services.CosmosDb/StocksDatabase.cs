@@ -30,7 +30,7 @@ namespace TradesDataManager.Services.CosmosDb
             return result;
         }
 
-        public async Task<Stocks> GetStocks(IEnumerable<string> tickerSymbols)
+        public async Task<Stocks> GetStocks(IEnumerable<string> tickerSymbolsFilter)
         {
             //Query cosmos db 
             //This would involve a parameterised QueryDefinition such that, the call made to cosmos is SELECT [columns] FROM c WHERE CONTAINS(...)

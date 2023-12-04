@@ -58,15 +58,14 @@ namespace TradesDataManager.Controllers
         [HttpGet("stocks")]
         [ProducesResponseType(typeof(StocksResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> GetStocks([FromQuery] IEnumerable<string> tickerSymbols)
+        public async Task<IActionResult> GetStocks([FromQuery] IEnumerable<string> tickerSymbolsFilter)
         {
             try
             {
                 if (!tickerSymbols.Any())
                 {
-                    var message = "Null request";
-                    _logger.LogError(message);
-                    return BadRequest(message);
+                    //This means it's a request to get all stocks, without a filter.
+                    //Log here
                 }
 
                 _logger.LogDebug($"{nameof(GetStock)} called with ticker symbols: {string.Join(", ", tickerSymbols)}");

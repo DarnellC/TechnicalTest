@@ -20,9 +20,9 @@ namespace TradesDataManager.Services.RequestHandlers
             return new StockResponse(result.BrokerId, result.TickerSymbol, result.PriceInPounds, result.NumberOfShares);
         }
 
-        public async Task<StocksResponse> GetStocksRequestHandler(IEnumerable<string> tickerSymbols)
+        public async Task<StocksResponse> GetStocksRequestHandler(IEnumerable<string> tickerSymbolsFilter)
         {
-            var results = await _stocksDatabase.GetStocks(tickerSymbols);
+            var results = await _stocksDatabase.GetStocks(tickerSymbolsFilter);
 
             return new StocksResponse(new List<StockResponse>());
         }

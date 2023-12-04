@@ -7,7 +7,7 @@ namespace TradesDataManager.Services.RequestHandlers
     {
         Task<StockResponse> GetStockRequestHandler(string tickerSymbol);
 
-        Task<StocksResponse> GetStocksRequestHandler(IEnumerable<string> tickerSymbols);
+        Task<StocksResponse> GetStocksRequestHandler(IEnumerable<string> tickerSymbolsFilter);
 
         Task UpsertTradeRequestHandler(TradeNotificationRequest tradeNotificationRequest);
     }
