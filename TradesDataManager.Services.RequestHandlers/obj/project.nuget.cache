@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vYyF0kVb0wLegnpsqvQjzwKFbISPfyduLUhcREhekB3OLRiXTOCzmMDT0FxRX2Qsgv9+lt4re5UmVxI1e75QNg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Darne\\source\\repos\\TechnicalTest\\TradesDataManager.Services.RequestHandlers\\TradesDataManager.Services.RequestHandlers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Darne\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
